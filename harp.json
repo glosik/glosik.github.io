@@ -1,0 +1,33 @@
+{
+	"globals": {
+		"site": "Template",
+		"title": "Boilerplate + subfolder with snippets",
+		"description": "We build smart applications for your smart buisness.",
+		"tld": "http://www.ww.org/",
+        "CONTACT": {
+            "phone": "222-222-2222"
+        },
+        "STYLE": {
+            "level-1" : "main.css",
+            "level-2" : "../main.css"
+        },
+        "PAGES": {
+            "SNIPPETS": {
+                "name": "snippets",
+                "url": "/snippets/index.html"
+            },
+            "INUIT": {
+                "name": "inuit",
+                "url": "/snippets/inuit.html"
+            },
+            "MODULAR": {
+                "name": "modular",
+                "url": "/snippets/modular.html"
+            },
+            "PORTFOLIO": {
+                "name": "portfolio",
+                "url": "/snippets/portfolio.html"
+            }
+        }
+	}
+}
