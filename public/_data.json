@@ -1,0 +1,10 @@
+{
+  "blog": {
+    "layout": "_layout.blog",
+    "title": "Blog"
+  },
+  "angular": {
+    "layout": "_layout.blog",
+    "title": "Aquent angular test"
+  }
+}

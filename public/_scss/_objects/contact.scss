@@ -1,0 +1,74 @@
+#contact {
+    h2{        color: $dark;  }
+    form {
+        margin: 0 auto;
+        color: $dark;
+    }
+
+    label,    textarea,    input {
+        border: $border solid $dark;
+        background: transparent;
+    }
+    label {
+        width: 30%;
+        border-right: none;
+        display: block;
+        float: left;
+    }
+    input {
+        width: 70%;
+        border-left: none;
+        @include placeholder();
+    }
+    textarea {
+        width: 100%;
+        text-transform: uppercase;
+        padding: $border*2;
+    }
+    input,    textarea {
+        font-family: $sans-serif;
+        font-weight: bold;
+        &:focus {
+            outline: none;
+        }
+        @include placeholderhide();
+        &[type=text] {
+            color: $dark;
+            text-transform: uppercase;
+        }
+    }
+    .message {
+        position: relative;
+        textarea {
+            &:focus {
+                &+label {
+                    opacity: 0;
+                }
+            }
+            &:valid {
+                &+label {
+                    opacity: 0;
+                }
+            }
+        }
+        label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border: none;
+        }
+    }
+
+    button {
+        background-color: $dark;
+        border: none; //strip default
+        color: $white;
+        font-family: $sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 24px;
+        padding: 8px 0;
+        display: block;
+        width: 100%;
+    }
+}

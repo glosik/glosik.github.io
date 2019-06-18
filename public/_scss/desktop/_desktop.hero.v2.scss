@@ -1,0 +1,35 @@
+$spacer: 1.1em; 
+$c2: $main; 
+$c1: lighten($c2, 5%);
+
+.bg-diagonal{
+  background-color: $c2;
+  background-image: -webkit-linear-gradient(297deg, $c1 50%,  $c2 50%);  
+}
+
+.card {min-height: 100vh;}
+
+.printcard {
+  border: $spacer/2 solid white;
+  width: $spacer*28;
+  height: $spacer*15;
+  text-transform: uppercase;
+  padding: $spacer;
+  position: relative;
+  .title { 
+    font-size: $spacer*3;
+  }
+  .subtitle { 
+    position: absolute;
+    background-color: $c2;
+    min-width: 18ch;
+    padding: 0 2ch ;
+    bottom: -1.5ch;
+    left:50%;
+    transform: translateX(-50%);
+      font-size: $spacer;
+  }
+}
+
+.desktop-hidden { display: none; }
+

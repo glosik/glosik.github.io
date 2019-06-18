@@ -1,0 +1,19 @@
+$size:  $border*20;   
+#contact {
+        .card, &:target .card {
+            background-color: $main;
+            padding-top: $menu-height + $border;
+        }
+        form {
+            color: $dark;
+            margin-top: 25%;
+            margin-bottom: 5%;
+            //padding: 1em;
+        }
+        h2 {display: none;}
+        form {width: 90%;}
+        div,textarea {margin-bottom: $border*2;}
+        textarea, .message {height: $size;}
+        .message label {line-height: $size;}
+        label, input, button{line-height: $size/2;}
+    }

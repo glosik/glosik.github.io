@@ -1,0 +1,82 @@
+@import "_slider";
+
+@media screen and (max-width: 768px) {
+	body {
+		overflow: hidden;
+	}
+
+	body,
+	a {
+		color: $white;
+	}
+
+	nav,
+	main,
+	.card,
+	section,
+	svg,
+	.controls,
+	#prev,
+	#next,
+	:target .card a {
+		position: absolute;
+	}
+
+	nav,
+	main,
+	section,
+	.controls,
+	nav ul,
+	.card,
+	:target .card,
+	:target .card a {
+		width: 100%;
+	}
+
+	body,
+	main,
+	section,
+	.card,
+	:target .card,
+	#slider,
+	#slider li {
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.card,
+	svg {
+		padding-top: $menu-height;
+	}
+
+	#work,
+	.card,
+	:target .card,
+	nav ul > li,
+	nav ul > li:last-child,
+	.description,
+	#prev,
+	#next {
+		border: $border solid $white
+	}
+
+	@import "navigation";
+
+
+	.description {
+		padding: $menu-height/2;
+		width: 75%;
+		height: 40%;
+		margin: 0 auto;
+		//        padding-top: 50px;
+		position: relative;
+		top: $menu-height;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+
+	@import "_controls";
+	@import "_card";
+	//@import "_mobile.hero.v1";
+	@import "_mobile.hero.v2";
+	@import "contact";
+}

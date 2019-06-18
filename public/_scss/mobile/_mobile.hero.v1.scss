@@ -1,0 +1,33 @@
+#about {
+    height: 100%;
+    display: table;
+    p {
+        display: none;
+    }
+    .card,
+    &:target .card {
+        h1{font-size: 1rem;}
+        background-color: $main;
+        color: $dark;
+        font-weight: bold;
+//        
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        h1:before {
+            content: ' ';
+            display: block;
+            //        background-color: white;
+            width: $menu-height*1.8;
+            height: $menu-height*1.8;
+            margin: auto;
+            margin-bottom: $menu-height/4;
+            background-image: url("images/png24.png");
+            border-radius: 50%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            //        border: $border solid black;
+        }
+    }
+}
