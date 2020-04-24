@@ -3,4 +3,8 @@
 
 ## push an existing repository from the command line
 > git remote add origin https://github.com/glosik/template-harp.git
+> git push https://'user_name':'password'@github.com/glosik/glosik.github.io.git
 * git push -u origin master
+
+
+
