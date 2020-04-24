@@ -1,8 +1,8 @@
 # Home
-<a href="https://glosik.github.io" target="_blank">https://glosik.github.io</a>
+<a href="https://glosik.github.io" target="_blank" rel="noopener">https://glosik.github.io</a>
 
 open in new window:
-[https://glosik.github.io](https://glosik.github.io){:target="_blank"}
+[https://glosik.github.io](https://glosik.github.io) {:target="_blank"}
 
 
 ## push an existing repository from the command line
