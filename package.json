@@ -1,31 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "test",
   "version": "2.0.0",
-  "description": "harp & npm script",
-  "devDependencies": {
-    "browser-sync": "^2.24.7",
-    "csso-cli": "^1.1.0",
-    "html-dist": "^0.3.1",
-    "html-minifier": "^3.5.21",
-    "imageoptim-cli": "^2.0.4",
-    "replace-in-file": "^3.4.2",
-    "uglify-js": "^3.4.9",
-    "uncss": "^0.16.2",
-    "usemin-cli": "^0.5.1",
-    "webp-converter": "^2.1.6"
-  },
-  "scripts": {
-    "dev": "harp server & browser-sync start --proxy 'localhost:9000' --files 'index.ejs, main.scss, public/blog.jade'",
-    "clean:pre": "cp -r www dist && rm -r dist/index.html && rm -r dist/js/*.*",
-    "html:js": "usemin www/index.html --dest dist --output dist/index.html --noprocess true",
-    "html:minify": "html-minifier --minify-js true --file-ext html --collapse-whitespace --remove-comments -o 'index.html' --input-dir 'dist' --output-dir 'dist'",
-    "js:build": "uglifyjs www/js/*.js --output dist/js/main.min.js",    
-    "css:uncss": "uncss -t 1000 -H dist -i '.active'  dist/index.html > dist/_main.css",
-     "css:clean": "csso dist/main.css --output dist/main.css --comments none",      
-    "clean": "rm -r www & rm -r dist",
-    "img": "imageoptim '**/*.jpg'",
-    "build": "npm run clean && harp compile && npm run clean:pre && npm run html:js && npm run html:minify && npm run js:build && npm run css:clean"
-  },
+  "description": "notebook",
   "author": "",
   "license": "ISC"
 }
