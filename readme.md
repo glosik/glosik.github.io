@@ -2,4 +2,4 @@
 > git remote add origin https://github.com/glosik/template-harp.git
 * git push -u origin master
 
-[glosik.github.io](glosik.github.io)
+[https://glosik.github.io](glosik.github.io)
